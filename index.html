@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey's</title>
+    <link rel="stylesheet" href="style/program.css">
     <!-- tailwind and daisy ui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,18 +39,31 @@
 
 <body class="font-manrope">
     <header class="mx-24 my-12">
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <nav class="mb-10">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-3 text-bg shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-bg shadow bg-base-100 rounded-box w-52">
+                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl ">Hockey<span
+                            class="text-red-600">’</span>s</a>
+                </div>
+                <div class="Stext-base navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
@@ -57,43 +71,95 @@
                         <li><a>Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Hockey <span class="text-red-600">’</span>
-                    s</a>
+                <div class="navbar-end">
+                    <i class="fa-solid fa-magnifying-glass pr-6 hidden lg:flex "></i>
+                    <button class="btn bg-[#FF4240] text-white">Get Ticket</button>
+                </div>
             </div>
-            <div class=" text-base navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Home</a></li>
-                    <li><a>About</a></li>
-                    <li><a>Pages</a></li>
-                    <li><a>Blog</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                    <i class="fa-solid fa-magnifying-glass pr-6"></i>
-                    <a class="btn bg-[#FF4240] text-white">Get Ticket</a>
-            </div>
-        </div>
+        </nav>
+
         <!-- slider or carousel -->
         <div class="carousel w-full">
             <div id="slide1" class="carousel-item relative w-full">
-              <img src="Images/1.png" class="w-full h-550" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle">❮</a> 
-                <a href="#slide2" class="btn btn-circle">❯</a>
-              </div>
-            </div> 
+                <img src="Images/1.png" class="w-full h-550" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
             <div id="slide2" class="carousel-item relative w-full">
-              <img src="Images/4.png" class="w-1170 h-550" />
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle">❮</a> 
-                <a href="#slide3" class="btn btn-circle">❯</a>
-              </div>
-            </div>  
+                <img src="Images/4.png" class="w-1170 h-550" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
         </div>
     </header>
-    <main>
+    <main class="font-manrope">
+        <section class="mx-24 my-24  text-center">
+            <div class="mb-20">
+                <h3 class="text-4xl font-bold mb-4">Professional Hockeys Club</h3>
+                <p>Home to passionate players and dedicated fans, our hockey club embodies teamwork, skill,
+                    and a relentless
+                    pursuit of victory on the ice </p>
+            </div>
+            <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <div>
+                    <div class="radial-progress text-error" style="--value:87;" role="progressbar"> 87% </div>
+                    <h4 class="text-xl font-bold">Prayer Facility</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
 
+                <div>
+                    <div class="radial-progress text-accent" style="--value:95;" role="progressbar">95%</div>
+                    <h4 class="text-xl font-bold">Experienced Coach</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-warning " style="--value:90;" role="progressbar">90%</div>
+                    <h4 class="text-xl font-bold">Senior Player</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+                <div>
+                    <div class="radial-progress text-primary" style="--value:80;" role="progressbar">80%</div>
+                    <h4 class="text-xl font-bold">Training Ground</h4>
+                    <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                </div>
+            </div>
+        </section>
+        <!-- Program Sections -->
+        <section class="mx-24 my-24 ">
+            <h3 class="text-4xl font-bold mb-4 text-center">Program Sections</h3>
+            <p class="text-center mb-20">Home to passionate players and dedicated fans, our hockey club embodies teamwork,
+                skill,and a relentless pursuit of victory on the ice </p>
+            
+            <div class="program ">
+                <div class="programmer grid grid-cols-1 lg:grid-cols-2">
+                    <div class="junior">
+                        <h4 class="junior-header">Junior Program</h4>
+                        <p class="junior-description">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                            sed et in.</p>
+                            <button class="btn-r">Register Now!</button>
+                    </div>
+                    <div class="Teenager">
+                        <h4 class="Teenager-header">Teenager Program</h4>
+                        <p class="Teenager-description">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                            sed et in.</p>
+                            <button class="btn-r">Register Now!</button>
+                    </div>
+                </div>
+                <div class="Professional">
+                    <h4 class="Professional-header">Professional Program</h4>
+                    <p class="Professional-description">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                        <button class="btn-r">Register Now!</button>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
